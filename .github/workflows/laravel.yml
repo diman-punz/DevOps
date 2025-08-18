@@ -73,3 +73,5 @@ jobs:
           "text": "❌ *Laravel CI Pipeline FAILED* ❌\n\n*Repository:* ${{ github.repository }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* ${{ github.sha }}\n*Commit Message:* ${{ github.event.head_commit.message }}\n*Author:* ${{ github.actor }}\n*Workflow:* ${{ github.workflow }}\n*Run ID:* ${{ github.run_id }}\n\n💥 Pipeline failed. Please check the logs for details.\n\n[View Run Details](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
         }' \
         "$GOOGLE_CHAT_WEBHOOK"
+
+  
